@@ -1,0 +1,43 @@
+{
+    "surface": {
+        "sw_albedo": 0.15,
+        "_c_sw_albedo": "0–1  |  ocean 0.06  grass 0.15  desert 0.35  snow 0.85",
+
+        "skin_temperature_C": null,
+        "_c_skin_temp": "°C  |  null = use lowest sounding level"
+    },
+
+    "gases": {
+        "CO2_ppm": 422.0,
+        "_c_CO2": "ppm  |  current ~422  pre-industrial 280  2×CO2 560",
+
+        "CH4_ppm": 1.9,
+        "_c_CH4": "ppm  |  current ~1.9  pre-industrial 0.72"
+    },
+
+    "solar": {
+        "latitude_deg": null,
+        "_c_lat": "°N  |  null = read from sounding file",
+
+        "longitude_deg": null,
+        "_c_lon": "°E  |  null = read from sounding file",
+
+        "fixed_sza_deg": null,
+        "_c_sza": "degrees  |  null = compute from time+location  |  0=overhead  90=horizon"
+    },
+
+    "vertical_grid": {
+        "resolution_below_15km_km": 0.5,
+        "_c_res": "km  |  0.25 fine  0.5 standard  1.0 coarse  |  above 15 km always 1 km to 50 km"
+    },
+
+    "output": {
+        "save_clearsky": true,
+        "_c_clearsky": "true = also write lw/sw _clr variables  |  false = all-sky only"
+    },
+
+    "processing": {
+        "n_cpu": 4,
+        "_c_cpu": "cores  |  -1 = all available"
+    }
+}
